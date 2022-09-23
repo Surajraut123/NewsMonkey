@@ -115,7 +115,7 @@ export class News extends Component {
             
         </div>
         <div className="container d-flex justify-content-between">
-        <button disabled={this.state.page<=1} type="button" className="btn btn-dark" onClick={this.handleprevclick} style={{backgroundColor:'#90ff88', fontWeight:'700', color:'black', boxShadow: '0px 1px 16px 0px #2412b7', border: '2px solid white'}}> &larr; Previous</button>
+        <button disabled={this.state.page<=1} type="button"  className="btn btn-dark" onClick={this.handleprevclick} style={{backgroundColor:'#90ff88', fontWeight:'700', color:'black', boxShadow: '0px 1px 16px 0px #2412b7', border: '2px solid white'}}> &larr; Previous</button>
         <button disabled={this.state.page + 1 > Math.ceil(this.state.totalResults/this.props.pageSize)} type="button" className="btn btn-dark" onClick={this.handlenextclick} style={{backgroundColor:'#90ff88', fontWeight:'700', color:'black', boxShadow: '0px 1px 16px 0px #2412b7', border: '2px solid white'}}>Next &rarr;</button>
         </div>
       </div>
